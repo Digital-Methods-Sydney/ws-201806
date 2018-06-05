@@ -1,4 +1,7 @@
-> [To get the API keys open this DropBox folder](https://www.dropbox.com/sh/zqgcf3hgk4vmf65/AAA0UL5pD26IMJiaze21dWLVa?dl=0).  (Note: you need to be a member of the University of Sydney DropBox group. If you have problems in accessing the share folder, [let me know](mailto:francesco.bailo@sydney.edu.au)).
+> [To get the API keys open this DropBox folder](https://www.dropbox.com/sh/zqgcf3hgk4vmf65/AAA0UL5pD26IMJiaze21dWLVa?dl=0) and download the file `api_credentials_PRIVATE_WORKSHOP_USE_ONLY.R` into your working directory.  (Note: you need to be a member of the University of Sydney DropBox group. If you have problems in accessing the share folder, [let me know](mailto:francesco.bailo@sydney.edu.au)).
+> If you have trouble obtaining API access [have a look here](http://vosonlab.net/SocialMediaLab/access_API).
+> If you have no idea [what's an API have a look here](https://fraba.github.io/digital_media_methods_sydney/ws02/ws02.html).
+
 
 
 SocialMediaLab Tutorial - University of Sydney (2018)
