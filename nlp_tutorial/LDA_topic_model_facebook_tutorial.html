@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+@font-face {
+font-family: octicons-link;
+src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+body {
+-webkit-text-size-adjust: 100%;
+text-size-adjust: 100%;
+color: #333;
+font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+font-size: 16px;
+line-height: 1.6;
+word-wrap: break-word;
+}
+a {
+background-color: transparent;
+}
+a:active,
+a:hover {
+outline: 0;
+}
+strong {
+font-weight: bold;
+}
+h1 {
+font-size: 2em;
+margin: 0.67em 0;
+}
+img {
+border: 0;
+}
+hr {
+box-sizing: content-box;
+height: 0;
+}
+pre {
+overflow: auto;
+}
+code,
+kbd,
+pre {
+font-family: monospace, monospace;
+font-size: 1em;
+}
+input {
+color: inherit;
+font: inherit;
+margin: 0;
+}
+html input[disabled] {
+cursor: default;
+}
+input {
+line-height: normal;
+}
+input[type="checkbox"] {
+box-sizing: border-box;
+padding: 0;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+td,
+th {
+padding: 0;
+}
+* {
+box-sizing: border-box;
+}
+input {
+font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+a {
+color: #4078c0;
+text-decoration: none;
+}
+a:hover,
+a:active {
+text-decoration: underline;
+}
+hr {
+height: 0;
+margin: 15px 0;
+overflow: hidden;
+background: transparent;
+border: 0;
+border-bottom: 1px solid #ddd;
+}
+hr:before {
+display: table;
+content: "";
+}
+hr:after {
+display: table;
+clear: both;
+content: "";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin-top: 15px;
+margin-bottom: 15px;
+line-height: 1.1;
+}
+h1 {
+font-size: 30px;
+}
+h2 {
+font-size: 21px;
+}
+h3 {
+font-size: 16px;
+}
+h4 {
+font-size: 14px;
+}
+h5 {
+font-size: 12px;
+}
+h6 {
+font-size: 11px;
+}
+blockquote {
+margin: 0;
+}
+ul,
+ol {
+padding: 0;
+margin-top: 0;
+margin-bottom: 0;
+}
+ol ol,
+ul ol {
+list-style-type: lower-roman;
+}
+ul ul ol,
+ul ol ol,
+ol ul ol,
+ol ol ol {
+list-style-type: lower-alpha;
+}
+dd {
+margin-left: 0;
+}
+code {
+font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+font-size: 12px;
+}
+pre {
+margin-top: 0;
+margin-bottom: 0;
+font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+.select::-ms-expand {
+opacity: 0;
+}
+.octicon {
+font: normal normal normal 16px/1 octicons-link;
+display: inline-block;
+text-decoration: none;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.octicon-link:before {
+content: '\f05c';
+}
+.markdown-body:before {
+display: table;
+content: "";
+}
+.markdown-body:after {
+display: table;
+clear: both;
+content: "";
+}
+.markdown-body>*:first-child {
+margin-top: 0 !important;
+}
+.markdown-body>*:last-child {
+margin-bottom: 0 !important;
+}
+a:not([href]) {
+color: inherit;
+text-decoration: none;
+}
+.anchor {
+display: inline-block;
+padding-right: 2px;
+margin-left: -18px;
+}
+.anchor:focus {
+outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin-top: 1em;
+margin-bottom: 16px;
+font-weight: bold;
+line-height: 1.4;
+}
+h1 .octicon-link,
+h2 .octicon-link,
+h3 .octicon-link,
+h4 .octicon-link,
+h5 .octicon-link,
+h6 .octicon-link {
+color: #000;
+vertical-align: middle;
+visibility: hidden;
+}
+h1:hover .anchor,
+h2:hover .anchor,
+h3:hover .anchor,
+h4:hover .anchor,
+h5:hover .anchor,
+h6:hover .anchor {
+text-decoration: none;
+}
+h1:hover .anchor .octicon-link,
+h2:hover .anchor .octicon-link,
+h3:hover .anchor .octicon-link,
+h4:hover .anchor .octicon-link,
+h5:hover .anchor .octicon-link,
+h6:hover .anchor .octicon-link {
+visibility: visible;
+}
+h1 {
+padding-bottom: 0.3em;
+font-size: 2.25em;
+line-height: 1.2;
+border-bottom: 1px solid #eee;
+}
+h1 .anchor {
+line-height: 1;
+}
+h2 {
+padding-bottom: 0.3em;
+font-size: 1.75em;
+line-height: 1.225;
+border-bottom: 1px solid #eee;
+}
+h2 .anchor {
+line-height: 1;
+}
+h3 {
+font-size: 1.5em;
+line-height: 1.43;
+}
+h3 .anchor {
+line-height: 1.2;
+}
+h4 {
+font-size: 1.25em;
+}
+h4 .anchor {
+line-height: 1.2;
+}
+h5 {
+font-size: 1em;
+}
+h5 .anchor {
+line-height: 1.1;
+}
+h6 {
+font-size: 1em;
+color: #777;
+}
+h6 .anchor {
+line-height: 1.1;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table,
+pre {
+margin-top: 0;
+margin-bottom: 16px;
+}
+hr {
+height: 4px;
+padding: 0;
+margin: 16px 0;
+background-color: #e7e7e7;
+border: 0 none;
+}
+ul,
+ol {
+padding-left: 2em;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+margin-top: 0;
+margin-bottom: 0;
+}
+li>p {
+margin-top: 16px;
+}
+dl {
+padding: 0;
+}
+dl dt {
+padding: 0;
+margin-top: 16px;
+font-size: 1em;
+font-style: italic;
+font-weight: bold;
+}
+dl dd {
+padding: 0 16px;
+margin-bottom: 16px;
+}
+blockquote {
+padding: 0 15px;
+color: #777;
+border-left: 4px solid #ddd;
+}
+blockquote>:first-child {
+margin-top: 0;
+}
+blockquote>:last-child {
+margin-bottom: 0;
+}
+table {
+display: block;
+width: 100%;
+overflow: auto;
+word-break: normal;
+word-break: keep-all;
+}
+table th {
+font-weight: bold;
+}
+table th,
+table td {
+padding: 6px 13px;
+border: 1px solid #ddd;
+}
+table tr {
+background-color: #fff;
+border-top: 1px solid #ccc;
+}
+table tr:nth-child(2n) {
+background-color: #f8f8f8;
+}
+img {
+max-width: 100%;
+box-sizing: content-box;
+background-color: #fff;
+}
+code {
+padding: 0;
+padding-top: 0.2em;
+padding-bottom: 0.2em;
+margin: 0;
+font-size: 85%;
+background-color: rgba(0,0,0,0.04);
+border-radius: 3px;
+}
+code:before,
+code:after {
+letter-spacing: -0.2em;
+content: "\00a0";
+}
+pre>code {
+padding: 0;
+margin: 0;
+font-size: 100%;
+word-break: normal;
+white-space: pre;
+background: transparent;
+border: 0;
+}
+.highlight {
+margin-bottom: 16px;
+}
+.highlight pre,
+pre {
+padding: 16px;
+overflow: auto;
+font-size: 85%;
+line-height: 1.45;
+background-color: #f7f7f7;
+border-radius: 3px;
+}
+.highlight pre {
+margin-bottom: 0;
+word-break: normal;
+}
+pre {
+word-wrap: normal;
+}
+pre code {
+display: inline;
+max-width: initial;
+padding: 0;
+margin: 0;
+overflow: initial;
+line-height: inherit;
+word-wrap: normal;
+background-color: transparent;
+border: 0;
+}
+pre code:before,
+pre code:after {
+content: normal;
+}
+kbd {
+display: inline-block;
+padding: 3px 5px;
+font-size: 11px;
+line-height: 10px;
+color: #555;
+vertical-align: middle;
+background-color: #fcfcfc;
+border: solid 1px #ccc;
+border-bottom-color: #bbb;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #bbb;
+}
+.pl-c {
+color: #969896;
+}
+.pl-c1,
+.pl-s .pl-v {
+color: #0086b3;
+}
+.pl-e,
+.pl-en {
+color: #795da3;
+}
+.pl-s .pl-s1,
+.pl-smi {
+color: #333;
+}
+.pl-ent {
+color: #63a35c;
+}
+.pl-k {
+color: #a71d5d;
+}
+.pl-pds,
+.pl-s,
+.pl-s .pl-pse .pl-s1,
+.pl-sr,
+.pl-sr .pl-cce,
+.pl-sr .pl-sra,
+.pl-sr .pl-sre {
+color: #183691;
+}
+.pl-v {
+color: #ed6a43;
+}
+.pl-id {
+color: #b52a1d;
+}
+.pl-ii {
+background-color: #b52a1d;
+color: #f8f8f8;
+}
+.pl-sr .pl-cce {
+color: #63a35c;
+font-weight: bold;
+}
+.pl-ml {
+color: #693a17;
+}
+.pl-mh,
+.pl-mh .pl-en,
+.pl-ms {
+color: #1d3e81;
+font-weight: bold;
+}
+.pl-mq {
+color: #008080;
+}
+.pl-mi {
+color: #333;
+font-style: italic;
+}
+.pl-mb {
+color: #333;
+font-weight: bold;
+}
+.pl-md {
+background-color: #ffecec;
+color: #bd2c00;
+}
+.pl-mi1 {
+background-color: #eaffea;
+color: #55a532;
+}
+.pl-mdr {
+color: #795da3;
+font-weight: bold;
+}
+.pl-mo {
+color: #1d3e81;
+}
+kbd {
+display: inline-block;
+padding: 3px 5px;
+font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+line-height: 10px;
+color: #555;
+vertical-align: middle;
+background-color: #fcfcfc;
+border: solid 1px #ccc;
+border-bottom-color: #bbb;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #bbb;
+}
+.task-list-item {
+list-style-type: none;
+}
+.task-list-item+.task-list-item {
+margin-top: 3px;
+}
+.task-list-item input {
+margin: 0 0.35em 0.25em -1.6em;
+vertical-align: middle;
+}
+:checked+.radio-label {
+z-index: 1;
+position: relative;
+border-color: #4078c0;
+}
+.sourceLine {
+display: inline-block;
+}
+code .kw { color: #000000; }
+code .dt { color: #ed6a43; }
+code .dv { color: #009999; }
+code .bn { color: #009999; }
+code .fl { color: #009999; }
+code .ch { color: #009999; }
+code .st { color: #183691; }
+code .co { color: #969896; }
+code .ot { color: #0086b3; }
+code .al { color: #a61717; }
+code .fu { color: #63a35c; }
+code .er { color: #a61717; background-color: #e3d2d2; }
+code .wa { color: #000000; }
+code .cn { color: #008080; }
+code .sc { color: #008080; }
+code .vs { color: #183691; }
+code .ss { color: #183691; }
+code .im { color: #000000; }
+code .va {color: #008080; }
+code .cf { color: #000000; }
+code .op { color: #000000; }
+code .bu { color: #000000; }
+code .ex { color: #000000; }
+code .pp { color: #999999; }
+code .at { color: #008080; }
+code .do { color: #969896; }
+code .an { color: #008080; }
+code .cv { color: #008080; }
+code .in { color: #008080; }
+</style>
+<style>
+body {
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 45px;
+  padding-top: 0px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1 id="lda-topic-model-analysis-of-facebook-data">LDA Topic Model Analysis of Facebook Data</h1>
+<p>Dr Timothy Graham (ANU) 5 June 2018</p>
+<h1 id="introduction">Introduction</h1>
+<p>In this tutorial we will be doing a small-scale project that uses an advanced text analysis technique (topic modelling) to study Breast Cancer Awareness on Facebook (similar to the journal article in the set reading). Note: this is tutorial has been adapted from undergraduate course work in the Bachelor of Advanced Computing at the ANU.</p>
+<p>You will learn how to:</p>
+<ol>
+<li>Import and clean text data from Facebook (user comments data);</li>
+<li>Convert the data into a document-term matrix (DTM) and prepare it for topic modelling;</li>
+<li>Generate a Latent-Dirichlet Allocation (LDA) topic model for the data;</li>
+<li>Analyse and interpret the topics that are generated from the model to provide a qualitative analysis of the main topics or themes that are discussed within the Facebook data.</li>
+</ol>
+<p>The dataset for this tutorial consists of 10,538 user comments that were posted on two pages within the timeframe of 15/3/2014 to 15/3/2017 (three years of data). The Facebook pages are:</p>
+<ol>
+<li><p>Breast Cancer Support UK (<a href="https://www.facebook.com/breastcancersupportuk/" class="uri">https://www.facebook.com/breastcancersupportuk/</a>)</p></li>
+<li><p>Breast Cancer Awareness Month (<a href="https://www.facebook.com/breastcancerawarenessmonth/" class="uri">https://www.facebook.com/breastcancerawarenessmonth/</a>)</p></li>
+</ol>
+<p>The dataset combines together user comments collected from both of these pages.</p>
+<p>You can download the dataset and save it to your local working directory in R. It has been provided for you in the course materials folder.</p>
+<h2 id="what-are-topic-models">What are topic models?</h2>
+<p>Informally, topic models can be said to ‘automagically’ extract topics from text. Topic models unveil hidden thematic structure in a collection of text documents. As Scott Weingart describes in his excellent <a href="http://www.scottbot.net/HIAL/?p=19113">blog post</a>: “if I feed the computer, say, the last few speeches of President Barack Obama, it’ll come back telling me that the president mainly talks about the economy, jobs, the Middle East, the upcoming election, and so forth”.</p>
+<p>More formally, topic models are “generative models which provide a probabilistic framework for the term frequency occurrences in documents in a given corpus” (Grun &amp; Hornik, 2011, p. 1). For an overview of probabilistic topic models that balances ease-of-reading with technical detail, see <a href="https://www.academia.edu/10025326/Recent_advances_and_applications_of_probabilistic_topic_models">Wood (2014)</a>.</p>
+<p>Latent Dirichlet allocation (LDA) is a particularly popular method for fitting a topic model. It treats each document as a mixture of topics, and each topic as a mixture of words. This allows documents to “overlap” each other in terms of content, rather than being separated into discrete groups, in a way that mirrors typical use of natural language.</p>
+<p>LDA topic models have become a very powerful method for unsupervised classification of text data.</p>
+<h2 id="installation-of-r-and-rstudio">Installation of R and RStudio</h2>
+<p>This tutorial will be conducted using the R programming language. You will need to download the <a href="https://cran.r-project.org/">R base package</a> and optionally <a href="https://www.rstudio.com/products/rstudio/download/">RStudio</a> if you prefer a graphical user interface. Personally, I would encourage you to install RStudio as it makes project management much easier. It will also mean that you can open this tutorial RMarkdown file in RStudio and run the code directly.</p>
+<p>Tip: Create a new <em>project</em> in RStudio where you can store your files for this project.</p>
+<p>Once you have installed R (and optionally RStudio), you need to install several packages (libraries) for this tutorial.</p>
+<p>Run the following code and it will install the required packages:</p>
+<pre class="sourceCode r" id="cb1"><code class="sourceCode r"><div class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">install.packages</span>(<span class="st">&quot;topicmodels&quot;</span>)</div>
+<div class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw">install.packages</span>(<span class="st">&quot;tm&quot;</span>)</div>
+<div class="sourceLine" id="cb1-3" data-line-number="3"><span class="kw">install.packages</span>(<span class="st">&quot;slam&quot;</span>)</div>
+<div class="sourceLine" id="cb1-4" data-line-number="4"><span class="kw">install.packages</span>(<span class="st">&quot;stringr&quot;</span>)</div>
+<div class="sourceLine" id="cb1-5" data-line-number="5"><span class="kw">install.packages</span>(<span class="st">&quot;Rmpfr&quot;</span>)</div></code></pre>
+<h2 id="load-libraries-and-dataset">Load libraries and dataset</h2>
+<p>After installing R and the required packages, the next step is to load them into the R global environment:</p>
+<pre><code>## Loading required package: topicmodels
+
+## Loading required package: tm
+
+## Loading required package: NLP
+
+## Loading required package: slam
+
+## Loading required package: stringr
+
+## Loading required package: Rmpfr
+
+## Loading required package: gmp
+
+## Error: package or namespace load failed for 'gmp':
+##  package 'gmp' was installed by an R version with different internals; it needs to be reinstalled for use with this R version
+</code></pre>
+<p>Next, we will import the dataset. It might take a minute or two to download from the server…</p>
+<pre class="sourceCode r" id="cb3"><code class="sourceCode r"><div class="sourceLine" id="cb3-1" data-line-number="1">rawData &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;dataset_COMP2550_breast_cancer_facebook_comments.csv&quot;</span>, </div>
+<div class="sourceLine" id="cb3-2" data-line-number="2">    <span class="dt">stringsAsFactors =</span> F)</div>
+<div class="sourceLine" id="cb3-3" data-line-number="3"><span class="co"># View(rawData)</span></div></code></pre>
+<h2 id="data-cleaning--wrangling">Data cleaning / wrangling</h2>
+<p>We need to do some cleaning and wrangling of the data in order to make it ready for analysis.</p>
+<pre class="sourceCode r" id="cb4"><code class="sourceCode r"><div class="sourceLine" id="cb4-1" data-line-number="1"><span class="co"># convert the dataframe object to a character vector</span></div>
+<div class="sourceLine" id="cb4-2" data-line-number="2">rawData &lt;-<span class="st"> </span><span class="kw">as.character</span>(rawData[, <span class="dv">1</span>])</div>
+<div class="sourceLine" id="cb4-3" data-line-number="3"></div>
+<div class="sourceLine" id="cb4-4" data-line-number="4"><span class="co"># create a vector object of the word count for each comment</span></div>
+<div class="sourceLine" id="cb4-5" data-line-number="5">wordCounts &lt;-<span class="st"> </span><span class="kw">str_count</span>(rawData, <span class="st">&quot;</span><span class="ch">\\</span><span class="st">S+&quot;</span>)</div>
+<div class="sourceLine" id="cb4-6" data-line-number="6"><span class="co"># find which comments have less than N words (in this example</span></div>
+<div class="sourceLine" id="cb4-7" data-line-number="7"><span class="co"># we specify 20 words)</span></div>
+<div class="sourceLine" id="cb4-8" data-line-number="8">toDel &lt;-<span class="st"> </span><span class="kw">which</span>(wordCounts <span class="op">&lt;</span><span class="st"> </span><span class="dv">20</span>)</div>
+<div class="sourceLine" id="cb4-9" data-line-number="9"><span class="co"># remove these comments from the dataset</span></div>
+<div class="sourceLine" id="cb4-10" data-line-number="10">rawData &lt;-<span class="st"> </span>rawData[<span class="op">-</span>toDel]</div>
+<div class="sourceLine" id="cb4-11" data-line-number="11"></div>
+<div class="sourceLine" id="cb4-12" data-line-number="12"><span class="co"># convert the character encoding to UTF-8 (to avoid problems</span></div>
+<div class="sourceLine" id="cb4-13" data-line-number="13"><span class="co"># with weird/strange characters in the data) we will</span></div>
+<div class="sourceLine" id="cb4-14" data-line-number="14"><span class="co"># duplicate the comments vector into a new vector</span></div>
+<div class="sourceLine" id="cb4-15" data-line-number="15"><span class="co"># 'facebookData' facebookData &lt;-</span></div>
+<div class="sourceLine" id="cb4-16" data-line-number="16"><span class="co"># iconv(rawData,to='utf-8-mac') # &lt;--- !! Only use this if</span></div>
+<div class="sourceLine" id="cb4-17" data-line-number="17"><span class="co"># you are working on a Mac computer</span></div>
+<div class="sourceLine" id="cb4-18" data-line-number="18">facebookData &lt;-<span class="st"> </span><span class="kw">iconv</span>(rawData, <span class="dt">to =</span> <span class="st">&quot;utf-8&quot;</span>)</div></code></pre>
+<p>Next we will convert the vector of comments to a VCorpus object to do text manipulation using the ‘tm’ package in R</p>
+<pre class="sourceCode r" id="cb5"><code class="sourceCode r"><div class="sourceLine" id="cb5-1" data-line-number="1">facebookDataCorpus &lt;-<span class="st"> </span><span class="kw">VCorpus</span>(<span class="kw">VectorSource</span>(facebookData))</div></code></pre>
+<p>Now we will create a document-term matrix from the data, which we will be using as input for the topic model.</p>
+<p>There are several choices that we make in the arguments of the <code>DocumentTermMatrix</code> function, which will affect the output of the topic model. For example, if we set <code>stopwords</code> to <code>T</code>, then this means we will remove common English words from the dataset such as ‘the’ and ‘and’ (which we don’t think will be very useful for our analysis).</p>
+<pre class="sourceCode r" id="cb6"><code class="sourceCode r"><div class="sourceLine" id="cb6-1" data-line-number="1"><span class="co"># create a document term matrix out of the Vcorpus object</span></div>
+<div class="sourceLine" id="cb6-2" data-line-number="2">dtmTopicModeling &lt;-<span class="st"> </span><span class="kw">DocumentTermMatrix</span>(facebookDataCorpus, <span class="dt">control =</span> <span class="kw">list</span>(<span class="dt">stemming =</span> F, </div>
+<div class="sourceLine" id="cb6-3" data-line-number="3">    <span class="dt">tolower =</span> <span class="ot">TRUE</span>, <span class="dt">removeNumbers =</span> F, <span class="dt">removePunctuation =</span> <span class="ot">TRUE</span>, </div>
+<div class="sourceLine" id="cb6-4" data-line-number="4">    <span class="dt">language =</span> <span class="st">&quot;english&quot;</span>, <span class="dt">stopwords =</span> T))</div></code></pre>
+<p>We can print some information to the console about the document term matrix. We are particularly interested in the number of terms (columns). For larger datasets it can become very computationally expensive to run topic models with large number of terms or features in the matrix.</p>
+<pre class="sourceCode r" id="cb7"><code class="sourceCode r"><div class="sourceLine" id="cb7-1" data-line-number="1">dtmTopicModeling</div></code></pre>
+<pre><code>## &lt;&lt;DocumentTermMatrix (documents: 3228, terms: 8459)&gt;&gt;
+## Non-/sparse entries: 94644/27211008
+## Sparsity           : 100%
+## Maximal term length: 557
+## Weighting          : term frequency (tf)
+</code></pre>
+<p>Sometimes there are URLs in the data which we want to remove. We can do this via:</p>
+<pre class="sourceCode r" id="cb9"><code class="sourceCode r"><div class="sourceLine" id="cb9-1" data-line-number="1">dtmTopicModeling &lt;-<span class="st"> </span>dtmTopicModeling[, <span class="op">!</span><span class="kw">grepl</span>(<span class="st">&quot;http&quot;</span>, dtmTopicModeling<span class="op">$</span>dimnames<span class="op">$</span>Terms)]</div></code></pre>
+<p>The final part of data cleaning involves applying a technique called ‘term frequency-inverse document frequency’ (tf-idf). We will use the approach in <a href="http://www.jstatsoft.org/v40/i13/paper">Grun &amp; Hornik (2011)</a>, which includes a formula on page 12. Tf-idf is a principled approach to filter out ‘unimportant’ words from our text. As Grun &amp; Hornik describe: “this measure allows to omit terms which have low frequency as well as those occurring in many documents” (2011, p. 12). Words with a higher tf-idf score are more important. We will only keep words that have a tf-idf greater than or equal to the median tf-idf score of the sample.</p>
+<p>We also use tf-idf to reduce the size of the document-term matrix <code>dtmTopicModeling</code> that we created in the previous step. Size is not really a problem for the little dataset in this tutorial, but as datasets become bigger the feature set (i.e., the number of columns in the document-term matrix) becomes computationally expensive to work with.</p>
+<pre class="sourceCode r" id="cb10"><code class="sourceCode r"><div class="sourceLine" id="cb10-1" data-line-number="1">term_tfidf &lt;-<span class="st"> </span><span class="kw">tapply</span>(dtmTopicModeling<span class="op">$</span>v<span class="op">/</span><span class="kw">row_sums</span>(dtmTopicModeling)[dtmTopicModeling<span class="op">$</span>i], </div>
+<div class="sourceLine" id="cb10-2" data-line-number="2">    dtmTopicModeling<span class="op">$</span>j, mean) <span class="op">*</span><span class="st"> </span><span class="kw">log2</span>(<span class="kw">nDocs</span>(dtmTopicModeling)<span class="op">/</span><span class="kw">col_sums</span>(dtmTopicModeling <span class="op">&gt;</span><span class="st"> </span></div>
+<div class="sourceLine" id="cb10-3" data-line-number="3"><span class="st">    </span><span class="dv">0</span>))</div>
+<div class="sourceLine" id="cb10-4" data-line-number="4">median_tfidf &lt;-<span class="st"> </span><span class="kw">summary</span>(term_tfidf)[<span class="dv">3</span>]</div>
+<div class="sourceLine" id="cb10-5" data-line-number="5">dtmTopicModeling &lt;-<span class="st"> </span>dtmTopicModeling[, term_tfidf <span class="op">&gt;=</span><span class="st"> </span>median_tfidf]</div></code></pre>
+<p>Some final necessary cleaning of the data to ensure that there are no rows in the document-term matrix (comments) that have no text (terms), which can result from the tf-idf process and other processing.</p>
+<pre class="sourceCode r" id="cb11"><code class="sourceCode r"><div class="sourceLine" id="cb11-1" data-line-number="1"><span class="co"># find which rows no longer have any words in them (row sums</span></div>
+<div class="sourceLine" id="cb11-2" data-line-number="2"><span class="co"># to zero) due to tf-idf</span></div>
+<div class="sourceLine" id="cb11-3" data-line-number="3">toRemove &lt;-<span class="st"> </span><span class="kw">which</span>(<span class="kw">row_sums</span>(dtmTopicModeling) <span class="op">==</span><span class="st"> </span><span class="dv">0</span>, )</div>
+<div class="sourceLine" id="cb11-4" data-line-number="4"><span class="co"># ensure that our dtm only contains rows where sum &gt; 0</span></div>
+<div class="sourceLine" id="cb11-5" data-line-number="5">dtmTopicModeling &lt;-<span class="st"> </span>dtmTopicModeling[<span class="kw">row_sums</span>(dtmTopicModeling) <span class="op">&gt;</span><span class="st"> </span></div>
+<div class="sourceLine" id="cb11-6" data-line-number="6"><span class="st">    </span><span class="dv">0</span>, ]</div>
+<div class="sourceLine" id="cb11-7" data-line-number="7"></div>
+<div class="sourceLine" id="cb11-8" data-line-number="8">dtmTopicModeling<span class="op">$</span>dimnames<span class="op">$</span>Docs &lt;-<span class="st"> </span><span class="kw">as.character</span>(<span class="kw">c</span>(<span class="dv">1</span><span class="op">:</span>dtmTopicModeling<span class="op">$</span>nrow))  <span class="co"># fix the 'row' numbering</span></div></code></pre>
+<h2 id="generate-the-topic-models">Generate the topic models</h2>
+<p>In this section we will be generating the topic model and analysing it.</p>
+<pre class="sourceCode r" id="cb12"><code class="sourceCode r"><div class="sourceLine" id="cb12-1" data-line-number="1">k &lt;-<span class="st"> </span><span class="dv">10</span>  <span class="co"># the number of topics (you will need to choose a different number for your assignment!)</span></div>
+<div class="sourceLine" id="cb12-2" data-line-number="2"></div>
+<div class="sourceLine" id="cb12-3" data-line-number="3">seedNum &lt;-<span class="st"> </span><span class="dv">1</span>  <span class="co"># specify a seed number so we can replicate the results</span></div>
+<div class="sourceLine" id="cb12-4" data-line-number="4"></div>
+<div class="sourceLine" id="cb12-5" data-line-number="5"><span class="co"># create the topic model</span></div>
+<div class="sourceLine" id="cb12-6" data-line-number="6">lda &lt;-<span class="st"> </span><span class="kw">LDA</span>(dtmTopicModeling, <span class="dt">k =</span> k, <span class="dt">control =</span> <span class="kw">list</span>(<span class="dt">seed =</span> seedNum))  <span class="co"># might take a few minutes...</span></div></code></pre>
+<p>We can now view the ‘top 20’ terms (words) for each of our 10 topics. The terms are ordered from most to least probable (how likely a term belongs to a particular topic), therefore the top terms are the most important for our analysis.</p>
+<pre class="sourceCode r" id="cb13"><code class="sourceCode r"><div class="sourceLine" id="cb13-1" data-line-number="1"><span class="co"># use the `terms` function to generate a dataframe of term</span></div>
+<div class="sourceLine" id="cb13-2" data-line-number="2"><span class="co"># probabilities from our LDA model</span></div>
+<div class="sourceLine" id="cb13-3" data-line-number="3">topTwentyTermsEachTopic &lt;-<span class="st"> </span><span class="kw">terms</span>(lda, <span class="dv">20</span>)</div>
+<div class="sourceLine" id="cb13-4" data-line-number="4"></div>
+<div class="sourceLine" id="cb13-5" data-line-number="5"><span class="co"># we can view this nicely using the `View` function</span></div>
+<div class="sourceLine" id="cb13-6" data-line-number="6"><span class="co"># View(topTwentyTermsEachTopic)</span></div>
+<div class="sourceLine" id="cb13-7" data-line-number="7"></div>
+<div class="sourceLine" id="cb13-8" data-line-number="8"><span class="co"># you can also write the top 20 terms to CSV file in your R</span></div>
+<div class="sourceLine" id="cb13-9" data-line-number="9"><span class="co"># working directory:</span></div>
+<div class="sourceLine" id="cb13-10" data-line-number="10"><span class="kw">write.csv</span>(topTwentyTermsEachTopic, <span class="st">&quot;top_20_terms_my_topic_model.csv&quot;</span>, </div>
+<div class="sourceLine" id="cb13-11" data-line-number="11">    <span class="dt">row.names =</span> F)</div></code></pre>
+<p>Recall in the data cleaning process that we removed some rows which summed to zero (contained no terms after the cleaning process finished). When we want to analyse our comments dataset we need to remove these from our Vcorpus object and create a new Vcorpus object:</p>
+<pre class="sourceCode r" id="cb14"><code class="sourceCode r"><div class="sourceLine" id="cb14-1" data-line-number="1"><span class="co"># !! create a corpus of documents that exclude the documents</span></div>
+<div class="sourceLine" id="cb14-2" data-line-number="2"><span class="co"># we removed previously</span></div>
+<div class="sourceLine" id="cb14-3" data-line-number="3">facebookDataCorpus_LDA &lt;-<span class="st"> </span>facebookDataCorpus[<span class="op">-</span>toRemove]</div></code></pre>
+<p>How can we make sense of Topic 1?</p>
+<p>We can generate a small random sample of 5 comments that belong to Topic 1 (i.e., this is the most likely topic for these comments). Then we can read and interpret the comments to help us make sense of why they were assigned to Topic 1. More importantly, we can start to figure out a label to describe Topic 1, and also come up with a brief summary of what that topic is.</p>
+<pre class="sourceCode r" id="cb15"><code class="sourceCode r"><div class="sourceLine" id="cb15-1" data-line-number="1">topicsProb &lt;-<span class="st"> </span><span class="kw">topics</span>(lda, <span class="dv">1</span>)</div>
+<div class="sourceLine" id="cb15-2" data-line-number="2">topic1comments &lt;-<span class="st"> </span><span class="kw">which</span>(topicsProb <span class="op">==</span><span class="st"> </span><span class="dv">1</span>)</div>
+<div class="sourceLine" id="cb15-3" data-line-number="3">topic1commentsText &lt;-<span class="st"> </span><span class="kw">as.list</span>(facebookDataCorpus_LDA[topic1comments])</div>
+<div class="sourceLine" id="cb15-4" data-line-number="4"><span class="kw">set.seed</span>(<span class="dv">42</span>)  <span class="co"># we set the seed number so we can replicate the random sample (if needed)</span></div>
+<div class="sourceLine" id="cb15-5" data-line-number="5">samplecomments &lt;-<span class="st"> </span><span class="kw">sample</span>(topic1commentsText, <span class="dv">5</span>)</div></code></pre>
+<p>Here are the top 20 terms for Topic 1:</p>
+<pre class="sourceCode r" id="cb16"><code class="sourceCode r"><div class="sourceLine" id="cb16-1" data-line-number="1">topTwentyTermsEachTopic[, <span class="dv">1</span>]</div></code></pre>
+<pre><code>##  [1] &quot;hair&quot;        &quot;prayers&quot;     &quot;rather&quot;      &quot;waited&quot;      &quot;kick&quot;       
+##  [6] &quot;open&quot;        &quot;ass&quot;         &quot;attitude&quot;    &quot;control&quot;     &quot;head&quot;       
+## [11] &quot;personal&quot;    &quot;examination&quot; &quot;survived&quot;    &quot;mind&quot;        &quot;agree&quot;      
+## [16] &quot;matter&quot;      &quot;choice&quot;      &quot;kit&quot;         &quot;little&quot;      &quot;colon&quot;
+</code></pre>
+<p>Here are 5 sample comments that belong to Topic 1:</p>
+<pre class="sourceCode r" id="cb18"><code class="sourceCode r"><div class="sourceLine" id="cb18-1" data-line-number="1"><span class="kw">lapply</span>(samplecomments, <span class="cf">function</span>(x) {</div>
+<div class="sourceLine" id="cb18-2" data-line-number="2">    x[<span class="dv">1</span>]<span class="op">$</span>content</div>
+<div class="sourceLine" id="cb18-3" data-line-number="3">})</div></code></pre>
+<pre><code>## $`2935`
+## [1] &quot;I think it's great that they can give attention to people who are in the spotlight, I think it brings more awareness and probably helps others fighting this horrible disease. She's being very brave coming out and fighting this in the public eye to let others see that they are NOT alone.&quot;
+## 
+## $`3008`
+## [1] &quot;i pray she kicks its ass. i had surgery yesterday to remove cancer from my neck. cancer is very scary and so many emotions run through a person. to be happy and positive are the best ones to have,.&quot;
+## 
+## $`929`
+## [1] &quot;It has been 6 years ago for me, still very fresh in my mind on a daily bases. I too shaved my head, I also had Bilateral Mastectomy. Best thing I could have ever done. Bless you and stay strong, you have a long life to live. It's only hair, it comes back. As far as breasts no big deal, your life is more important. Best of luck to you&quot;
+## 
+## $`2681`
+## [1] &quot;Just went through what you are going through now (Sept 2014 to present). Had the surgeries, the chemo and the radiation. It was rough but, you can make it. Do not fear what you cannot control. Just concentrate, one day at a time, on what that day brings! Peace &amp; blessings to you!&quot;
+## 
+## $`2046`
+## [1] &quot;For the entire month of October my company is offering this Breast Self Examination kit as a Buy One Get One FREE.  Free is good.  Contact me to obtain your Breast Chek Kit and get an extra to give to a loved one.  Breast self examination is the key to preventing breast cancer.&quot;
+</code></pre>
+<p>We can do the same process, this time for Topic 7.</p>
+<pre class="sourceCode r" id="cb20"><code class="sourceCode r"><div class="sourceLine" id="cb20-1" data-line-number="1">topic7comments &lt;-<span class="st"> </span><span class="kw">which</span>(topicsProb <span class="op">==</span><span class="st"> </span><span class="dv">7</span>)</div>
+<div class="sourceLine" id="cb20-2" data-line-number="2">topic7commentsText &lt;-<span class="st"> </span><span class="kw">as.list</span>(facebookDataCorpus_LDA[topic7comments])</div>
+<div class="sourceLine" id="cb20-3" data-line-number="3"><span class="kw">set.seed</span>(<span class="dv">1</span>)</div>
+<div class="sourceLine" id="cb20-4" data-line-number="4">samplecomments &lt;-<span class="st"> </span><span class="kw">sample</span>(topic7commentsText, <span class="dv">5</span>)</div></code></pre>
+<p>Top 20 terms for Topic 7:</p>
+<pre class="sourceCode r" id="cb21"><code class="sourceCode r"><div class="sourceLine" id="cb21-1" data-line-number="1">topTwentyTermsEachTopic[, <span class="dv">7</span>]</div></code></pre>
+<pre><code>##  [1] &quot;pray&quot;     &quot;prayers&quot;  &quot;beat&quot;     &quot;sorry&quot;    &quot;horrible&quot; &quot;shannon&quot; 
+##  [7] &quot;praying&quot;  &quot;recovery&quot; &quot;strength&quot; &quot;hear&quot;     &quot;thru&quot;     &quot;leave&quot;   
+## [13] &quot;doherty&quot;  &quot;thinking&quot; &quot;anyone&quot;   &quot;lots&quot;     &quot;mine&quot;     &quot;luck&quot;    
+## [19] &quot;hang&quot;     &quot;send&quot;
+</code></pre>
+<p>Extract five sample comments that belong to Topic 7:</p>
+<pre class="sourceCode r" id="cb23"><code class="sourceCode r"><div class="sourceLine" id="cb23-1" data-line-number="1"><span class="kw">lapply</span>(samplecomments, <span class="cf">function</span>(x) {</div>
+<div class="sourceLine" id="cb23-2" data-line-number="2">    x[<span class="dv">1</span>]<span class="op">$</span>content</div>
+<div class="sourceLine" id="cb23-3" data-line-number="3">})</div></code></pre>
+<pre><code>## $`1038`
+## [1] &quot;Praying for you Shannen.  I am a cancer survivor, and I agree, the unknown is the scariest part.  But stay strong young lady.&quot;
+## 
+## $`1197`
+## [1] &quot;Lots of Prayers for your Shannen...   Hang in there...  Stay Positive and Fight this Horrible Cancer...  You can do it...  God Bless...  &lt;3&quot;
+## 
+## $`2054`
+## [1] &quot;I really think March should be breast cancer awareness month. Why make us stress and worry right before the holidays? :-) &lt;ed&gt;&lt;U+00A0&gt;&lt;U+00BD&gt;&lt;ed&gt;&lt;U+00B2&gt;&lt;U+0095&gt;&quot;
+## 
+## $`2861`
+## [1] &quot;I am so sorry, sweetheart. I'm a breast cancer survivor. Be fearless and do what you have to do. My thoughts and prayers are with you as well as all others going through this terrible diagnosis.&quot;
+## 
+## $`951`
+## [1] &quot;I dont know what your going through but family support laughter and plenty of inner strength is needed were all praying for you and hope you get well&quot;
+</code></pre>
+<p>Following this process we are able to go back and forth between the topics, top terms within each topic, and the text comments in order to make sense of the results. We can follow this process in order to provide a qualitative (and of course quantitative) topic model analysis of any kind of text data.</p>
+<p>Importantly, some topics may not appear to make sense, no matter how hard you try. Sometimes the topic model will generate what are commonly called ‘junk topics’. It is normal to have a small percentage (say 5% to 10% of topics) that are junk topics. If you are getting too many junk topics, it might mean that you need to try out different values of <code>k</code> for the number of topics, and try out different approaches to cleaning and preparing the text data.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>I hope you have found this tutorial helpful and beneficial for your work. Please contact me with any questions (<a href="mailto:Timothy.Graham@anu.edu.au">Timothy.Graham@anu.edu.au</a>).</p>
+<p>Tim</p>
+
+</body>
+</html>
