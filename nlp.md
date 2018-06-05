@@ -1,4 +1,4 @@
-##A practical introduction to quantitative text analysis (workshop)
+## A practical introduction to quantitative text analysis (workshop)
 
 *Friday 8 June 2018, 10:00 - 12:00, VSCC Seminar Room 218, The University of Sydney*
 
