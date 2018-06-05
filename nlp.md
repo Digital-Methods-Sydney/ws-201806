@@ -8,12 +8,11 @@ With [Joel Nothman, Sydney Informatics Hub](https://informatics.sydney.edu.au/pe
 
 ### 2. Presentations (10 minutes max!)
 
-* Tim Graham 
-* Michael Vaughan
-* Monika Bednarek 
-* Gorana Grgic and Shaun Ratcliff
-* Yuanbo Qiu
-* Eduardo Goldani Altmann
+* [Michael Vaughan](http://sydney.edu.au/arts/staff/profiles/michael.vaughan.546.php), *[GIR](http://sydney.edu.au/arts/government_international_relations/)*
+* [Yuanbo Qiu](http://sydney.edu.au/arts/staff/profiles/yuanbo.qiu.702.php), *[MECO](http://sydney.edu.au/arts/media_communications/)*
+*[Monika Bednarek](http://sydney.edu.au/arts/linguistics/staff/profiles/monika.bednarek.php), *[Linguistics](http://sydney.edu.au/arts/linguistics/)*
+* [Eduardo Goldani Altmann](http://www.maths.usyd.edu.au/u/ega/) *[Mathematics and Statistics](http://www.maths.usyd.edu.au/)*
+* [Gorana Grgic](https://www.ussc.edu.au/people/gorana-grgic) and [Shaun Ratcliff](https://www.ussc.edu.au/people/shaun-ratcliff), *[USSC](https://www.ussc.edu.au/)*
 
 ### 3. Tutorial
 
