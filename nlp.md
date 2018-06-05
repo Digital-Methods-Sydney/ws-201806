@@ -4,9 +4,9 @@
 
 With [Joel Nothman, Sydney Informatics Hub](https://informatics.sydney.edu.au/people/) and [Tim Graham, ANU](https://researchers.anu.edu.au/researchers/graham-tj).
 
-### An introduction to applied quantitative text analysis (Joel, tbc)
+### 1. An introduction to applied quantitative text analysis (Joel, tbc)
 
-### Presentations (10 minutes max!)
+### 2. Presentations (10 minutes max!)
 
 * Tim Graham 
 * Michael Vaughan
@@ -14,8 +14,8 @@ With [Joel Nothman, Sydney Informatics Hub](https://informatics.sydney.edu.au/pe
 * Gorana Grgic and Shaun Ratcliff
 * Yuanbo Qiu
 
-### Tutorial
-
-**Come back for more details on the tutorial!**
+### 3. Tutorial
 
 You are invited to bring and prepare your own laptop.
+
+[Materials and details are here (Check it our regularly!)](https://github.com/Digital-Methods-Sydney/ws-201806/nlp_tutorial)

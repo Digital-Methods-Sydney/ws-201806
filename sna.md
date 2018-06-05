@@ -4,10 +4,11 @@
 
 With [Tim Graham, ANU](https://researchers.anu.edu.au/researchers/graham-tj)
 
-###  A brief introduction to SNA theory with application examples (Tim)
+### 1. A brief introduction to SNA theory with application examples (Tim)
 
-### Hands-on tutorial with SocialMediaLab (Tim)
-
-**Come back for more details on the tutorial!**
+### 2. Hands-on tutorial with SocialMediaLab (Tim)
 
 You are invited to bring and prepare your own laptop.
+
+[Materials and details are here (Check it our regularly!)](https://github.com/Digital-Methods-Sydney/ws-201806/sna_tutorial)
+
