@@ -13,6 +13,7 @@ With [Joel Nothman, Sydney Informatics Hub](https://informatics.sydney.edu.au/pe
 * Monika Bednarek 
 * Gorana Grgic and Shaun Ratcliff
 * Yuanbo Qiu
+* Eduardo Goldani Altmann
 
 ### 3. Tutorial
 
