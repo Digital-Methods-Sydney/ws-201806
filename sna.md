@@ -11,4 +11,3 @@ With [Tim Graham, ANU](https://researchers.anu.edu.au/researchers/graham-tj)
 You are invited to bring and prepare your own laptop.
 
 [Materials and details are here (Check it our regularly!)](https://github.com/Digital-Methods-Sydney/ws-201806/tree/master/sna_tutorial)
-
