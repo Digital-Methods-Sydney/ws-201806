@@ -5,7 +5,7 @@
 | | | |
 |-|-|-|
 |__11:00 - 11:30__| Presentations: What we are working on @ MECO|
-|__11:30 - 11:00__| Roundtable: Challenges in Social Media Research|
+|__11:30 - 12:00__| Roundtable: Challenges in Social Media Research|
 |__12:00 - 13:00__| Lunch (offered by MECO)|
 |__13:00 - 15:00__| [Workshop: A practical introduction to (social) network analysis](sna.md)|
 
