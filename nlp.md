@@ -16,6 +16,8 @@ With [Joel Nothman, Sydney Informatics Hub](https://informatics.sydney.edu.au/pe
 
 ### 3. Tutorial
 
-You are invited to bring and prepare your own laptop.
+You are invited to bring your own laptop to the tutorial. You can prepare for the tutorial by installing `R` and `RStudio` on your computer.
 
-[Materials and details are here (Check it our regularly!)](https://github.com/Digital-Methods-Sydney/ws-201806/tree/master/nlp_tutorial)
+* [To install and get started with R and RStudio](https://fraba.github.io/digital_media_methods_sydney/ws00/ws00.html)
+
+* [To access the materials of this tutorial](https://github.com/Digital-Methods-Sydney/ws-201806/tree/master/nlp_tutorial)
