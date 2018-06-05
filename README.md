@@ -1,11 +1,3 @@
-## Location
-
-Veterinary Science Conference Centre Seminar Room 218
-
-![map](/img/map.png)
-
-[Link to Google Maps](https://goo.gl/maps/BkeR6SotThk)
-
 ## Program
 
 ### Thursday 7 June 2018
@@ -24,3 +16,11 @@ Veterinary Science Conference Centre Seminar Room 218
 |__10:00 - 12:00__| (Workshop: A practical introduction to quantitative text analysis](nlp.md)|
 |__12:00 - 13:00__| Lunch (offered by MECO)|
 |__15:00 - 17:00__| [Talk: Data science meets social science (with Timothy Graham, Media@Sydney)](https://www.eventbrite.com.au/e/mediasydney-data-science-meets-social-science-tickets-45085238161) |
+
+## Location
+
+Veterinary Science Conference Centre Seminar Room 218
+
+![map](/img/map.png)
+
+[Link to Google Maps](https://goo.gl/maps/BkeR6SotThk)
