@@ -18,4 +18,4 @@ With [Joel Nothman, Sydney Informatics Hub](https://informatics.sydney.edu.au/pe
 
 You are invited to bring and prepare your own laptop.
 
-[Materials and details are here (Check it our regularly!)](https://github.com/Digital-Methods-Sydney/ws-201806/nlp_tutorial)
+[Materials and details are here (Check it our regularly!)](https://github.com/Digital-Methods-Sydney/ws-201806/tree/master/nlp_tutorial)
