@@ -92,6 +92,16 @@ the [VOSON website](http://voson.anu.edu.au/SocialMediaLab).
 
 ## Twitter data collection and analysis
 
+By executing the commands below you will write (save) a few files in your working directory. To set your working directory use these commands:
+
+``` r
+# Windows
+setwd("C:/Some directory")
+
+#Mac
+setwd("/Users/username/some directory")
+```
+
 In this section we will run through how to collect data from Twitter,
 create networks, and perform different kinds of analysis.
 
