@@ -2,9 +2,9 @@
 
 *Friday 8 June 2018, 10:00 - 12:00, VSCC Seminar Room 218, The University of Sydney*
 
-With [Joel Nothman, Sydney Informatics Hub](https://informatics.sydney.edu.au/people/) and [Tim Graham, ANU](https://researchers.anu.edu.au/researchers/graham-tj).
+With [Joel Nothman, Sydney Informatics Hub](https://informatics.sydney.edu.au/people/)
 
-### 1. An introduction to applied quantitative text analysis (Joel, tbc)
+### 1. An introduction to applied quantitative text analysis (Joel)
 
 ### 2. Presentations (10 minutes max!)
 

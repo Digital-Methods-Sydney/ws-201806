@@ -15,7 +15,6 @@
 |-|-|-|
 |__10:00 - 12:00__| [Workshop: A practical introduction to quantitative text analysis](nlp.md)|
 |__12:00 - 13:00__| Lunch (offered by MECO)|
-|__15:00 - 17:00__| [Talk: Data science meets social science (with Timothy Graham, Media@Sydney)](https://www.eventbrite.com.au/e/mediasydney-data-science-meets-social-science-tickets-45085238161) |
 
 ## Location
 
