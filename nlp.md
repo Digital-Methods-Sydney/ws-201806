@@ -6,6 +6,8 @@ With [Joel Nothman, Sydney Informatics Hub](https://informatics.sydney.edu.au/pe
 
 ### 1. An introduction to applied quantitative text analysis (Joel)
 
+[Download slides](slides/text-analysis-overview-joel.pdf)
+
 ### 2. Presentations (10 minutes max!)
 
 * [Michael Vaughan](http://sydney.edu.au/arts/staff/profiles/michael.vaughan.546.php), *[GIR](http://sydney.edu.au/arts/government_international_relations/)*
